@@ -1,0 +1,10 @@
+# EasySlimeChunkLocator Config
+# Config version 0.1
+# Visit the config page to find out how to configure this.
+# BukkitDev Link
+
+enabled: true
+item: 341
+Messages:
+  PartOfSlimeChunk: "That block is part of a slime chunk!"
+  NotPartOfSlimeChunk: "That block is not part of a slime chunk!"
