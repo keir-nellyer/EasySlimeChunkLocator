@@ -5,6 +5,8 @@
 
 enabled: true
 item: 341
+permissions: true
+debug-mode: false
 Messages:
   PartOfSlimeChunk: "That block is part of a slime chunk!"
   NotPartOfSlimeChunk: "That block is not part of a slime chunk!"

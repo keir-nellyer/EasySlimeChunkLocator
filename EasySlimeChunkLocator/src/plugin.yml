@@ -1,4 +1,8 @@
 name: EasySlimeChunkLocator
-version: 0.2
+version: 0.3
 author: iKeirNez
 main: me.iKeirNez.EasySlimeChunkLocator.EasySlimeChunkLocator
+permissions:
+    easyslimechunklocator.use:
+        description: Allows the user to use the plugin
+        default: op

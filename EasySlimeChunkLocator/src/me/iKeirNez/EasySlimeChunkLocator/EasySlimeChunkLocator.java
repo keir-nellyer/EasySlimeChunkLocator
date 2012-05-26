@@ -13,9 +13,16 @@ public class EasySlimeChunkLocator extends JavaPlugin {
 
 		System.out.println("[EasySlimeChunkLocator] Successfully loaded config.");
 		
+		if (config.getBoolean("debug-mode")){
+			System.out.println("[EasySlimeChunkDetector] Debug Mode, change debug-mode to false in the config to disable.");
+		}
+		
 		if (config.getBoolean("enabled")){
 			PluginManager pm = this.getServer().getPluginManager();
 			pm.registerEvents(new EasySlimeChunkLocatorPlayerListener(this), this);
+			if (config.getBoolean("debug-mode")){
+				System.out.println("[EasySlimeChunkDetector] Player Listener Successfully Registered.");
+			}
 		} else {
 			System.out.println("[EasySlimeChunkLocator] Enabled set to false in config, disabling plugin...");
 		}
