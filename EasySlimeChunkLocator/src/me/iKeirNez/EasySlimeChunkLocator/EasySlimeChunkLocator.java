@@ -10,6 +10,7 @@ public class EasySlimeChunkLocator extends JavaPlugin {
 		final FileConfiguration config = this.getConfig();
 		config.options().copyDefaults(true);
 		saveConfig();
+
 		System.out.println("[EasySlimeChunkLocator] Successfully loaded config.");
 		
 		if (config.getBoolean("enabled")){
